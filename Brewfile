@@ -7,4 +7,5 @@ brew 'python'
 cask 'dbeaver-community'
 cask 'google-chrome'
 cask 'pycharm'
+cask 'orbstack'
 
