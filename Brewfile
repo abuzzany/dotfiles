@@ -8,4 +8,4 @@ cask 'dbeaver-community'
 cask 'google-chrome'
 cask 'pycharm'
 cask 'orbstack'
-
+cask 'visual-studio-code'
