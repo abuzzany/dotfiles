@@ -9,8 +9,6 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> Alias <<< #
 setopt aliases
-alias 'ls'='exa'
-alias 'ls al'='exa -l'
 alias 'cat'='bat'
 
 # Pyenv coonfig
