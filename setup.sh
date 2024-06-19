@@ -6,3 +6,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install packages using brew
 brew Bundle
+
+# Replace .zshrc
+cp -f .zshrc ~/.zshrc & exec zsh
