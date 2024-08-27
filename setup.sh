@@ -5,7 +5,7 @@ RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install packages using brew
-brew Bundle
+brew bundle
 
 # Replace .zshrc
 cp -f .zshrc ~/.zshrc & exec zsh
