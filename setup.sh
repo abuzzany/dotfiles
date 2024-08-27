@@ -9,3 +9,9 @@ brew Bundle
 
 # Replace .zshrc
 cp -f .zshrc ~/.zshrc & exec zsh
+
+# Replace .vimrc
+cp -f .vimrc ~/.vimrc & exec vim
+
+# Execute terminal_config.sh
+./terminal_config.sh
