@@ -8,10 +8,10 @@ RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/
 brew bundle
 
 # Replace .zshrc
-cp -f .zshrc ~/.zshrc & exec zsh
+cp -f .zshrc ~/.zshrc; exec zsh
 
 # Replace .vimrc
-cp -f .vimrc ~/.vimrc & exec vim
+cp -f .vimrc ~/.vimrc; exec vim
 
 # Execute terminal_config.sh
 ./terminal_config.sh
