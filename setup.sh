@@ -4,6 +4,10 @@ RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Add brew to path
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/eva/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Install packages using brew
 brew bundle
 
