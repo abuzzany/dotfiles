@@ -29,13 +29,15 @@ fn execute_script(scripts_dir: &str, script_name: &str) -> std::io::Result<()>  
         Command::new("chmod")
             .arg("+x")
             .arg(&script_path)
-            .status()?;
+            .status()
+            .context("Failed to make script executable")?;
 
         // Execute the script
         let output = Command::new("sh")
             .arg("-c")
             .arg(&script_path)
-            .output()?;
+            .output()
+            .context("Failed to execute script")?;
 
         if output.status.success() {
             println!("{}", format!("{} executed successfully.", script_name).green());
