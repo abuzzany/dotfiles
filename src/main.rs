@@ -6,7 +6,8 @@ use colored::*;
 fn main() -> std::io::Result<()> {
    let scripts_dir = "./src/scripts";
    let scripts = vec![
-        "install_brew_packages.sh"
+       "install_homebrew.sh", 
+       "install_brew_packages.sh"
    ];
    
    for script in scripts {
