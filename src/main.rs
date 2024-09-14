@@ -8,7 +8,8 @@ fn main() -> std::io::Result<()> {
    let scripts = vec![
        "install_homebrew.sh", 
        "install_brew_packages.sh",
-       "install_oh_my_zsh.sh"
+       "install_oh_my_zsh.sh",
+       "terminal_config.sh"
    ];
    
    for script in scripts {
