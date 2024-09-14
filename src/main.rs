@@ -8,6 +8,7 @@ fn main() -> std::io::Result<()> {
        "install_homebrew.sh", 
        "install_brew_packages.sh",
        "install_oh_my_zsh.sh",
+       "copy_config_files.sh",
        "terminal_config.sh"
    ];
    
