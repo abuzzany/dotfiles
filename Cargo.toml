@@ -2,6 +2,8 @@
 name = "dotfiles"
 version = "0.1.0"
 edition = "2021"
+description = "A tool to manage and set up dotfiles."
+authors = ["Angel Buzany <abuzzany@gmail.com>"]
 
 [dependencies]
 clap = { version = "4.3.15" }
