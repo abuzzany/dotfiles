@@ -1,2 +1,2 @@
 # Install packages using brew
-brew bundle
+brew bundle --file=../Brewfile
