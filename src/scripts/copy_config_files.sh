@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 # Define color codes
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
