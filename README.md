@@ -11,6 +11,13 @@ This project includes configuration files and setup scripts for:
 - Various command-line tools and applications
 - Terminal customization with Powerlevel10k
 - Vim configuration
+- Python environment setup
+
+## Prerequisites
+
+- macOS (This setup is primarily designed for macOS)
+- Git
+- Rust (for running the main setup script)
 
 ## Installation
 
@@ -22,14 +29,15 @@ This project includes configuration files and setup scripts for:
 
 2. Run the setup script:
    ```
-   ./setup.sh
+   cargo build --release
+   ./target/release/dotfiles
    ```
 
-   This script will:
+   This will execute the following scripts:
    - Install Oh My Zsh
    - Install Homebrew
    - Install packages listed in the Brewfile
-   - Copy .zshrc and .vimrc to your home directory
+   - Copy configuration files (.zshrc and .vimrc) to your home directory
    - Set up terminal configurations
 
 3. After the setup script finishes, run the following command to configure Powerlevel10k:
@@ -50,7 +58,12 @@ This project includes configuration files and setup scripts for:
 
 ## Customization
 
-Feel free to modify the configuration files and scripts to suit your needs. You can add or remove packages in the `Brewfile`, adjust shell aliases in `.zshrc`, or modify vim settings in `.vimrc`.
+Feel free to modify the configuration files and scripts to suit your needs:
+
+- Add or remove packages in the `Brewfile`
+- Adjust shell aliases and configurations in `.zshrc`
+- Modify vim settings in `.vimrc`
+- Update the list of scripts to run in `src/main.rs`
 
 ## Contributing
 
@@ -59,3 +72,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [Oh My Zsh](https://ohmyz.sh/)
+- [Homebrew](https://brew.sh/)
+- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [Python](https://www.python.org/)
+- [Vim](https://www.vim.org/)
+- [Zsh](https://www.zsh.org/)
