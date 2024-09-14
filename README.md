@@ -17,7 +17,33 @@ This project includes configuration files and setup scripts for:
 
 - macOS (This setup is primarily designed for macOS)
 - Git
-- Rust (for running the main setup script)
+- Rust and Cargo (for running the main setup script)
+
+### Installing Rust and Cargo
+
+If you don't have Rust and Cargo installed, follow these steps:
+
+1. Open Terminal on your Mac.
+
+2. Install Rust and Cargo using rustup by running the following command:
+   ```
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+
+3. Follow the on-screen instructions. When prompted, choose the default installation (option 1).
+
+4. After installation, add Rust to your system PATH by running:
+   ```
+   source $HOME/.cargo/env
+   ```
+
+5. Verify the installation by checking the Rust and Cargo versions:
+   ```
+   rustc --version
+   cargo --version
+   ```
+
+   You should see version information for both commands.
 
 ## Installation
 
