@@ -1,6 +1,5 @@
 use std::process::Command;
 use std::path::Path;
-use std::fs;
 use colored::*;
 
 fn main() -> std::io::Result<()> {
@@ -29,15 +28,13 @@ fn execute_script(scripts_dir: &str, script_name: &str) -> std::io::Result<()>  
         Command::new("chmod")
             .arg("+x")
             .arg(&script_path)
-            .status()
-            .context("Failed to make script executable")?;
+            .status()?;
 
         // Execute the script
         let output = Command::new("sh")
             .arg("-c")
             .arg(&script_path)
-            .output()
-            .context("Failed to execute script")?;
+            .output()?;
 
         if output.status.success() {
             println!("{}", format!("{} executed successfully.", script_name).green());
