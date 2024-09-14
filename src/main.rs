@@ -3,6 +3,18 @@ use std::path::Path;
 use colored::*;
 
 fn main() -> std::io::Result<()> {
+    let dotfiles_art = r#"
+    _____     _______ ______ _____ _      ______  _____ 
+   |  __ \   |__   __|  ____|_   _| |    |  ____|/ ____|
+   | |  | | ___ | |  | |__    | | | |    | |__  | (___  
+   | |  | |/ _ \| |  |  __|   | | | |    |  __|  \___ \ 
+   | |__| | (_) | |  | |     _| |_| |____| |____ ____) |
+   |_____/ \___/|_|  |_|    |_____|______|______|_____/ 
+       "#;
+ 
+   println!("{}", dotfiles_art.bright_cyan());
+   println!("{}", "Welcome to Angel's Buzany dotfiles manager!".bright_green());
+   
    let scripts_dir = "./src/scripts";
    let scripts = vec![
        "install_homebrew.sh", 
