@@ -7,7 +7,8 @@ fn main() -> std::io::Result<()> {
    let scripts_dir = "./src/scripts";
    let scripts = vec![
        "install_homebrew.sh", 
-       "install_brew_packages.sh"
+       "install_brew_packages.sh",
+       "install_oh_my_zsh.sh"
    ];
    
    for script in scripts {
