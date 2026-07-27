@@ -25,6 +25,8 @@ fn main() -> std::io::Result<()> {
    ];
    let linux_scripts = vec![
        "linux/arch/install_yay.sh",
+       "linux/arch/install_yay_packages.sh",
+       "copy_config_files.sh"
    ];
    let os = Command::new("sh").arg("./src/scripts/detect_os.sh").output()?;
    let os_str = String::from_utf8_lossy(&os.stdout);
