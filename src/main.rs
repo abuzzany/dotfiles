@@ -24,7 +24,7 @@ fn main() -> std::io::Result<()> {
        "terminal_config.sh"
    ];
    let linux_scripts = vec![
-       "install_yay.sh",
+       "linux/arch/install_yay.sh",
    ];
    let os = Command::new("sh").arg("./src/scripts/detect_os.sh").output()?;
    let os_str = String::from_utf8_lossy(&os.stdout);
