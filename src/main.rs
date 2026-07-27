@@ -16,16 +16,28 @@ fn main() -> std::io::Result<()> {
    println!("{}", "Welcome to Angel's Buzany dotfiles manager!".bright_green());
    
    let scripts_dir = "./src/scripts";
-   let scripts = vec![
+   let mac_scripts = vec![
        "install_homebrew.sh", 
        "install_brew_packages.sh",
        "install_oh_my_zsh.sh",
        "copy_config_files.sh",
        "terminal_config.sh"
    ];
-   
-   for script in scripts {
-       execute_script(scripts_dir, script)?;
+   let linux_scripts = vec![
+       "install_yay.sh",
+   ];
+   let os = Command::new("sh").arg("./src/scripts/detect_os.sh").output()?;
+   let os_str = String::from_utf8_lossy(&os.stdout);
+
+   println!("{} detected", os_str);
+   if os_str.contains("MacOS") {
+       for script in mac_scripts {
+           execute_script(scripts_dir, script)?;
+       }
+   } else if os_str.contains("Linux") {
+       for script in linux_scripts {
+           execute_script(scripts_dir, script)?;
+       }
    }
 
    Ok(())
