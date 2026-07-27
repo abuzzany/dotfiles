@@ -25,7 +25,7 @@ This project includes configuration files and setup scripts for:
 
 ## Prerequisites
 
-- macOS (This setup is primarily designed for macOS)
+- MacOS or Linux(only ArchLinux supported so far)
 - Git
 - Rust and Cargo (for running the main setup script)
 
@@ -33,7 +33,7 @@ This project includes configuration files and setup scripts for:
 
 If you don't have Rust and Cargo installed, follow these steps:
 
-1. Open Terminal on your Mac.
+1. Open Terminal.
 
 2. Install Rust and Cargo using rustup by running the following command:
    ```
