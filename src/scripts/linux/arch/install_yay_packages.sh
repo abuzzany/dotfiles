@@ -4,7 +4,7 @@ yay -S --noconfirm zsh \
                    bat \
                    fzf \
                    neovim \
-                   obsidian   
+                   obsidian \
 
 
 # Install oh-my-zsh
