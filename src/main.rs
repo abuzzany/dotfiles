@@ -26,6 +26,7 @@ fn main() -> std::io::Result<()> {
    let linux_scripts = vec![
        "linux/arch/install_yay.sh",
        "linux/arch/install_yay_packages.sh",
+       "linux/arch/install_pacman_packages.sh",
        "copy_config_files.sh"
    ];
    let os = Command::new("sh").arg("./src/scripts/detect_os.sh").output()?;
